@@ -1,0 +1,13 @@
+.bg-image {
+    background-image: url('src/assets/img/black-and-white-trees.jpeg');
+    max-width: 100%;
+    min-height: 100vh;
+    /* background-color: #0A192F; */
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}

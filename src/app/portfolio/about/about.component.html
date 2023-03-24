@@ -1,0 +1,37 @@
+<div class="container" [ngStyle]="{color:getFontColor().color}">
+  <div class=" d-flex flex-wrap justify-content-center align-items-center w-100" *ngIf="bio$ | async as bio">
+    <div *ngFor="let options of respOptions" [ngClass]="options.viewClasses"
+      class="flex-column justify-content-center align-items-center text-center w-100 mt-3">
+      <h1 [ngClass]="options.headingClass" class="mb-5">
+        <span class="font-weight-bold">About </span>Me
+      </h1>
+      <div class="d-flex flex-wrap justify-content-center align-items-start">
+        <div [ngClass]="{ 'row':background, 'row': showImage, 'col-md-12': !showImage, 'col-md-12':!background}">
+          <div class="col-md-{{showImage ? '6':'12'}} col-sm-12 col-lg-{{showImage ? '6': '12'}}">
+            <div *ngIf="background" style="text-align:left">
+              <div class=" row" *ngFor="let par of bio.background">
+                <h4 *ngIf="!options.useSmallerHeadings" class="mb-4">{{ par }}</h4>
+                <h5 *ngIf="options.useSmallerHeadings" class="mb-4">{{ par }}</h5>
+              </div>
+            </div>
+            <a [href]="bio.resume" target="_blank" rel="noopener noreferrer" style="color:#64ffda" class="mt-3 mb-5 btn btn-dark">
+              Resume
+              <i class="ml-1 fas fa-angle-right"></i>
+            </a>
+            <div *ngIf="about">
+              <div class="row" *ngFor="let par of bio.about">
+                <h4 *ngIf="!options.useSmallerHeadings" class="mb-4">{{ par }}</h4>
+                <h5 *ngIf="options.useSmallerHeadings" class="mb-4">{{ par }}</h5>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="showImage" class="col-md-6 col-sm-12 mb-3">
+            <img src="../assets/img/headshot4.jpeg" style="height: auto; max-width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- In this template, you will display the data from the bio$ observable. You will loop through the “About” section of the information and add it as paragraphs to the “About” page. -->

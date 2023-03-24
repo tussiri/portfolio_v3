@@ -1,0 +1,45 @@
+.container {
+
+    justify-content: center;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 50px;
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.86);
+    margin-left: 1rem;
+}
+
+.languages i {
+    color: rgb(255, 255, 255);
+
+
+}
+
+.languages {
+
+    color: rgb(255, 255, 255, .86);
+    display: inline-flex;
+    padding-left: 10px;
+    font-size: 60px;
+}
+
+.soft-skills {
+    font-size: 20px;
+    color: #64ffda;
+    display: inline-flex;
+    line-height: 2rem;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px
+}
+
+
+.col {
+    max-width: 100%;
+    word-wrap: break-word;
+
+}
