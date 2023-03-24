@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators, FormGroup, NgForm } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, Validators, UntypedFormGroup, NgForm } from '@angular/forms';
 import { ContactService } from '../../core/services/contact.service';
 
 
@@ -10,9 +10,9 @@ import { ContactService } from '../../core/services/contact.service';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor(private builder: FormBuilder, private contact: ContactService) { }
+  constructor(private builder: UntypedFormBuilder, private contact: ContactService) { }
 
-  FormData: FormGroup;
+  FormData: UntypedFormGroup;
 
   respOptions = [
     {
@@ -30,9 +30,9 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit() {
     this.FormData = this.builder.group({
-      Fullname: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
-      Message: new FormControl('', [Validators.required])
+      Fullname: new UntypedFormControl('', [Validators.required]),
+      Email: new UntypedFormControl('', [Validators.compose([Validators.required, Validators.email])]),
+      Message: new UntypedFormControl('', [Validators.required])
     })
   }
 
