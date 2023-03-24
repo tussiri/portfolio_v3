@@ -12,3 +12,6 @@ src/assets/img/waves.jpg
 src/assets/img/waves.mp4
 src/assets/img/waves2.jpg
 node_modules
+
+# Local Netlify folder
+.netlify
