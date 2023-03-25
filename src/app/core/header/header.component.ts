@@ -33,8 +33,6 @@ export class HeaderComponent implements OnInit {
       pagePath: '/projects',
     },
     { title: 'Contact Me', homePath: '/contact', fragment: 'contact-me', pagePath: '/contact' },
-    { title: 'Contact Me', homePath: '/contact', fragment: 'contact-me', pagePath: '/contact' },
-    { title: 'Resume', homePath: '/resume', fragment: 'resume', pagePath: '/assets/img/Tumaini David Ussiri Resume(final).pdf', target: '_blank' },
     // { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' },
   ];
 
