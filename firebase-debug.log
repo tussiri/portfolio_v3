@@ -1,0 +1,50 @@
+[debug] [2023-03-28T20:23:02.465Z] ----------------------------------------------------------------------
+[debug] [2023-03-28T20:23:02.472Z] Command:       /Users/tumainiussiri/.nvm/versions/node/v17.9.1/bin/node /Users/tumainiussiri/.nvm/versions/node/v17.9.1/bin/firebase init
+[debug] [2023-03-28T20:23:02.472Z] CLI Version:   11.25.1
+[debug] [2023-03-28T20:23:02.473Z] Platform:      darwin
+[debug] [2023-03-28T20:23:02.473Z] Node Version:  v17.9.1
+[debug] [2023-03-28T20:23:02.474Z] Time:          Tue Mar 28 2023 15:23:02 GMT-0500 (Central Daylight Time)
+[debug] [2023-03-28T20:23:02.474Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-28T20:23:02.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T20:23:02.552Z] > authorizing via signed-in user (tussiri@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tumainiussiri/Desktop/Web-Dev-Projects/Website-Rebuild/Angular/Portfolio-Complete
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-03-28T20:34:10.242Z] ----------------------------------------------------------------------
+[debug] [2023-03-28T20:34:10.245Z] Command:       /Users/tumainiussiri/.nvm/versions/node/v17.9.1/bin/node /Users/tumainiussiri/.nvm/versions/node/v17.9.1/bin/firebase init
+[debug] [2023-03-28T20:34:10.246Z] CLI Version:   11.25.1
+[debug] [2023-03-28T20:34:10.246Z] Platform:      darwin
+[debug] [2023-03-28T20:34:10.246Z] Node Version:  v17.9.1
+[debug] [2023-03-28T20:34:10.248Z] Time:          Tue Mar 28 2023 15:34:10 GMT-0500 (Central Daylight Time)
+[debug] [2023-03-28T20:34:10.248Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-28T20:34:10.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T20:34:10.327Z] > authorizing via signed-in user (tussiri@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tumainiussiri/Desktop/Web-Dev-Projects/Website-Rebuild/Angular/Portfolio-Complete
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
