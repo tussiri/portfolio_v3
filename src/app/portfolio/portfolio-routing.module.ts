@@ -5,7 +5,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HeaderComponent } from '../core/header/header.component';
-import { ResumeComponent } from './resume/resume.component';
 
 
 const routes: Routes = [
@@ -13,7 +12,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { about: false, showImage: true, background: true } },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactFormComponent },
-  { path: 'resume', component: ResumeComponent }
 
 ];
 

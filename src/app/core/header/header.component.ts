@@ -15,13 +15,13 @@ export class HeaderComponent implements OnInit {
   ) {
 
   }
+  bio$ = this.bioService.getBio();
+  isHome$ = this.headerService.isHome();
 
   onToggleDropdown() {
     document.body.classList.toggle('dropdown-open')
   }
 
-  bio$ = this.bioService.getBio();
-  isHome$ = this.headerService.isHome();
 
   menuItems = [
     { title: 'Home', homePath: '/', fragment: 'home', pagePath: '/' },
@@ -33,13 +33,13 @@ export class HeaderComponent implements OnInit {
       pagePath: '/projects',
     },
     { title: 'Contact Me', homePath: '/contact', fragment: 'contact-me', pagePath: '/contact' },
-    { title: 'Resume', homePath: '/resume', fragment: 'resume', },
+    // { title: 'Resume', homePath: '/resume', fragment: 'resume', url: "'https://drive.google.com/file/d/1KlKxLvF1CELGGSuschghKxUAX7QF7Oys/view?usp=share_link'", target: '_blank' },
     // { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' },
   ];
 
 
 
-  ngOnInit(): void { }
+  ngOnInit() { }
 }
 
 /** In this component file, you will inject two services: the bioService to

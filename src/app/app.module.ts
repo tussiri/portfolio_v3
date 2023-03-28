@@ -10,8 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './portfolio/contact-form/contact-form.component';
 import { ContactService } from './core/services/contact.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ResumeComponent } from './portfolio/resume/resume.component';
-import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+
 
 
 
@@ -19,7 +18,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 
 @NgModule({
-  declarations: [AppComponent, VideoBackgroundComponent, ContactFormComponent, ResumeComponent],
+  declarations: [AppComponent, VideoBackgroundComponent, ContactFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +26,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     NgbModule,
     CoreModule,
     ReactiveFormsModule,
-    NgxExtendedPdfViewerModule
+
 
   ],
   providers: [ContactService],

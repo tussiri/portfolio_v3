@@ -11,6 +11,7 @@ h2 {
 h3 {
     color: rgba(255, 255, 255, 0.86);
     margin-left: 1rem;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .languages i {
@@ -30,11 +31,19 @@ h3 {
 .soft-skills {
     font-size: 20px;
     color: #64ffda;
-    display: inline-flex;
+    /* display: inline-flex; */
     line-height: 2rem;
     flex: 1;
     text-align: center;
-    margin: 0 5px
+    margin: 0 5px;
+
+}
+
+
+@media only screen and (min-width:768px) {
+    .soft-skills {
+        display: inline-flex;
+    }
 }
 
 
