@@ -9,8 +9,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { LanguagesSkillsComponent } from './languages-skills/languages-skills.component';
 
 
+
+
+
 @NgModule({
   declarations: [HomeComponent, AboutComponent, ProjectsComponent, LanguagesSkillsComponent],
-  imports: [CommonModule, PortfolioRoutingModule],
+  imports: [CommonModule, PortfolioRoutingModule,],
 })
 export class PortfolioModule { }
