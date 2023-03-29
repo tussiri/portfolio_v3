@@ -36,8 +36,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.showImage = this.activatedRoute.snapshot.data.showImage;
-    this.background = this.activatedRoute.snapshot.data.background
-    this.about = this.activatedRoute.snapshot.data.about
+    this.background = this.activatedRoute.snapshot.data.background;
+    this.about = this.activatedRoute.snapshot.data.about;
   }
 }
 
