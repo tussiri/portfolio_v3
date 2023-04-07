@@ -1,15 +1,31 @@
-<!--This needs a few fixes as well. Needs to make sure the links have Accessibility features built in.-->s
-<div class="d-flex min-vh-200 max-vh-90 w-85 justify-content-center pt-4 pr-5 pl-5" style="padding:40px">
-  <img src="../assets/img/headshot4.jpeg" style="height: 50px; padding-bottom: 0; border-radius: 50%; " alt="headshot"
-    routerLink="/" />
-  <div class="d-none d-md-flex justify-content-start align-items-start ml-3" *ngIf="bio$ | async as bio"
-    routerLink="/">
-    <h2 class="font-weight-bold" style="color:#64ffda">{{ bio.initials }}</h2>
+<!--This needs a few fixes as well. Needs to make sure the links have Accessibility features built in.-->
+<div
+  class="d-flex min-vh-200 max-vh-90 w-85 justify-content-center pt-4 pr-5 pl-5"
+  style="padding: 40px"
+>
+  <img
+    src="../assets/img/headshot4.jpeg"
+    style="height: 50px; padding-bottom: 0; border-radius: 50%"
+    alt="headshot"
+    routerLink="/"
+  />
+  <div
+    class="d-none d-md-flex justify-content-start align-items-start ml-3"
+    *ngIf="bio$ | async as bio"
+    routerLink="/"
+  >
+    <h2 class="font-weight-bold" style="color: #64ffda">{{ bio.initials }}</h2>
   </div>
-  <ul class="social-media-icons"
-    style="list-style-type: none; padding-left:10px; margin-left:25px vw-90;">
+  <ul
+    class="social-media-icons"
+    style="list-style-type: none; padding-left: 10px; margin-left: 25px vw-90"
+  >
     <li>
-      <a href="https://www.linkedin.com/in/tumaini-david-ussiri/" target="_blank" alt="LinkedIn profile link">
+      <a
+        href="https://www.linkedin.com/in/tumaini-david-ussiri/"
+        target="_blank"
+        alt="LinkedIn profile link"
+      >
         <i class="fab fa-linkedin-in" alt="LinkedIn logo"></i>
       </a>
     </li>
@@ -19,32 +35,60 @@
       </a>
     </li>
   </ul>
-  <div class="d-none d-md-flex flex-grow-1 justify-content-end align-items-start" *ngIf="bio$ | async as bio">
-    <button type="button" class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold" style="color: #64ffda"
-      *ngFor="let item of menuItems" [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
-      [fragment]="(isHome$ | async) ? item.fragment : ''">
+  <div
+    class="d-none d-md-flex flex-grow-1 justify-content-end align-items-start"
+    *ngIf="bio$ | async as bio"
+  >
+    <button
+      type="button"
+      class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold"
+      style="color: #64ffda"
+      *ngFor="let item of menuItems"
+      [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
+      [fragment]="(isHome$ | async) ? item.fragment : ''"
+    >
       {{ item.title }}
     </button>
-    <a [href]="bio.resume" target="_blank" rel="noopener noreferrer" style="color:#64ffda"
-      class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold">
+    <a
+      [href]="bio.resume"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color: #64ffda"
+      class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold"
+    >
       Resume
     </a>
   </div>
 
-
-  <div class="d-flex d-md-none justify-content-end flex-grow-1" *ngIf="bio$ | async as bio">
-    <div ngbDropdown class="d-inline-block" display=" dynamic" style="position:relative;">
+  <div
+    class="d-flex d-md-none justify-content-end flex-grow-1"
+    *ngIf="bio$ | async as bio"
+  >
+    <div
+      ngbDropdown
+      class="d-inline-block"
+      display=" dynamic"
+      style="position: relative"
+    >
       <button class="btn btn-outline-light border-0" ngbDropdownToggle>
         <i class="fas fa-lg fa-bars"></i>
       </button>
-      <div ngbDropdownMenu class="dropdown-menu-right" style=" min-width:auto;">
-        <button ngbDropdownItem *ngFor="let item of menuItems"
+      <div ngbDropdownMenu class="dropdown-menu-right" style="min-width: auto">
+        <button
+          ngbDropdownItem
+          *ngFor="let item of menuItems"
           [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
-          [fragment]="(isHome$ | async) ? item.fragment : ''">
+          [fragment]="(isHome$ | async) ? item.fragment : ''"
+        >
           {{ item.title }}
         </button>
-        <a [href]="bio.resume" target="_blank" rel="noopener noreferrer" style="color:black"
-          class="btn btn-outline-light border-0">
+        <a
+          [href]="bio.resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: black"
+          class="btn btn-outline-light border-0"
+        >
           Resume
         </a>
       </div>
