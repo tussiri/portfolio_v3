@@ -13,6 +13,10 @@ body {
   justify-content: center;
 }
 
+*{
+scrollbar-width: none;
+        -ms-overflow-style: none;
+}
 
 
 
@@ -42,8 +46,7 @@ footer.container {
 
 /* Default style for the scroll bar */
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: #f1f1f1;
+  display:none
 }
 
 ::-webkit-scrollbar-thumb {
