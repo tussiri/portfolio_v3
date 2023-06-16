@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+const PORTFOLIO_MODULE_PATH = './portfolio/portfolio.module';
+const BLOG_MODULE_PATH = './blog/blog.module';
+
 
 const routes: Routes = [
   {

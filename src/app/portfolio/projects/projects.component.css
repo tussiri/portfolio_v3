@@ -13,3 +13,7 @@
   text-overflow: ellipsis;
   max-width: 20ch;
 }
+
+.color-highlight {
+  color: #64ffda;
+}

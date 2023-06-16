@@ -9,3 +9,7 @@
 .container {
     display: flex
 }
+
+.color-highlight {
+    color: #64ffda;
+}

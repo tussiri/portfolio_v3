@@ -1,36 +1,45 @@
-<div class="container" style="margin-top:150px">
-
-    <section *ngFor="let options of respOptions" [ngClass]="options.viewClasses"
-        class="flex-column text-center mb-3">
-        <h1 [ngClass]="options.titleClasses" class="mb-5" style="color: #000000;">
-            <span class="font-weight-bold">Skills</span>
-        </h1>
-    </section>
-    <div class="container d-flex justify-content-center w-100 mx-auto">
-        <div class="d-flex vw-90 text-center justify-content-center mx-auto">
-            <div class="col">
-                <h2 class="flex-column text-center mt-3 mb-3">Soft Skills</h2>
-                <div class="container d-flex vw-33">
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <div *ngFor="let softSkill of softSkills"
-                            class="text-center col flex-column text-center mt-3 mb-3">
-                            <i class="fa-lg mr-5 fa {{softSkill.icon}} soft-skills">
-                                <h3>{{softSkill.name}}</h3>
-                            </i>
-                        </div>
-                    </div>
-                </div>
+<section class="container">
+  <div
+    *ngFor="let options of respOptions"
+    [ngClass]="options.viewClasses"
+    class="flex-column text-center mt-3 mb-3"
+  >
+    <h1 [ngClass]="options.titleClasses" class="mb-5">
+      <span class="font-weight-bold">Skills</span>
+    </h1>
+  </div>
+  <div
+    class="container d-flex vw-90 text-center justify-content-center mx-auto"
+  >
+    <div class="d-flex vw-90 text-center justify-content-center mx-auto">
+      <div class="col">
+        <h2 class="flex-column text-center mt-3 mb-3">Soft Skills</h2>
+        <div class="container d-flex vw-33">
+          <div class="d-flex flex-wrap justify-content-center">
+            <div
+              *ngFor="let softSkill of softSkills"
+              class="text-center col flex-column text-center mt-3 mb-3"
+            >
+              <i class="fa-lg mr-5 fa {{ softSkill.icon }} soft-skills">
+                <h3>{{ softSkill.name }}</h3>
+              </i>
             </div>
-            <div class="col vw-40">
-                <div class="container">
-                    <h2 class="flex-column text-center mt-3 mb-3">Languages</h2>
-                    <div class="row flex-wrap">
-                        <div *ngFor="let language of languages" class="col flex-column text-center mt-3 mb-3">
-                            <i class="col fa-lg mr-5 fab {{language.icon}} languages"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="col vw-40">
+        <div class="container">
+          <h2 class="flex-column text-center mt-3 mb-3">Languages</h2>
+          <div class="row flex-wrap">
+            <div
+              *ngFor="let language of languages"
+              class="col flex-column text-center mt-3 mb-3"
+            >
+              <i class="col fa-lg mr-5 fab {{ language.icon }} languages"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>

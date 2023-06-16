@@ -3,6 +3,9 @@ html,
 body {
   width: auto;
   max-height: 80%;
+  overflow-x: hidden;
+      scrollbar-width: none;
+        -ms-overflow-style: none;
 }
 
 body {
@@ -51,9 +54,9 @@ footer.container {
 /* Style for narrow screens */
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
-    width: 5px;
-    background-color: transparent;
+    display: none;
   }
+
 
   ::-webkit-scrollbar-thumb {
     background-color: #ccc;
