@@ -12,11 +12,13 @@ export class ProjectsComponent implements OnInit {
   constructor(
     private projectsService: ProjectsService,
     private headerService: HeaderService
+    
   ) {}
   isHome$ = this.headerService.isHome();
   projects$ = this.isHome$.pipe(
     mergeMap((atHome) => this.projectsService.getProjects(atHome))
   );
+
 
   respOptions = [
     {
@@ -34,6 +36,11 @@ export class ProjectsComponent implements OnInit {
   ];
 
   ngOnInit(): void {}
+
+  isArray(obj: any): boolean {
+    return Array.isArray(obj);
+  }
+
 }
 
 /**The projects come from the ProjectsService. You will use the HeaderService to determine whether the current page is the home page.

@@ -11,6 +11,8 @@
         { "name": "CSS3", "icon": "fa-css3" },
         { "name": "JavaScript", "icon": "fa-js" },
         { "name": "Java", "icon": "fa-java" },
-        { "name": "Angular", "icon": "fa-angular" }
+        { "name": "Angular", "icon": "fa-angular" },
+        { "name": "React", "icon":"fab fa-react"},
+        { "name": "Python", "icon":"fa-python"}
     ]
 }

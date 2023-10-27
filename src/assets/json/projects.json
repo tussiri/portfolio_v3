@@ -11,14 +11,19 @@
     "featured": true
   },
   {
-    "name": "Placeholder",
-    "stack": {
-      "name": "Angular",
-      "iconClasses": "fab fa-angular"
+    "name": "Mealify",
+    "stack": [
+      {
+      "name": "React",
+      "iconClasses": "fab fa-react"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "sourceUrl": "https://github.com",
-    "previewUrl": "https://github.com",
+    {"name": "Java",
+    "iconClasses":"fab fa-java"
+  }
+  ],
+    "description": "Mealify is a recipe sharing application that allows users to share, discover, and enjoy a variety of recipes. It's built using Java, React, Spring Boot, and MySQL.",
+    "sourceUrl": "https://github.com/tussiri/Capstone-V2",
+    "previewUrl": "",
     "featured": true
   },
   {

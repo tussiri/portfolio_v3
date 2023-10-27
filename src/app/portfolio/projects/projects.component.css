@@ -4,7 +4,9 @@
 
 .project-card {
   width: 290px;
-  height: 250px;
+  /* height: 250px; */
+  display:flex;
+  flex-direction:column;
 }
 
 .project-title {
@@ -16,4 +18,15 @@
 
 .color-highlight {
   color: #64ffda;
+}
+
+.tech-stack-item {
+  margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;  /* this allows the card-body to grow and shrink based on content */
+  /* other styles */
 }

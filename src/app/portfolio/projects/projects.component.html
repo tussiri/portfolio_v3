@@ -31,9 +31,21 @@
             {{ project.name }}
           </h5>
           <h6 class="card-subtitle mb-2 font-weight-lighter text-left">
-            <i [ngClass]="project.stack.iconClasses"></i>
-            {{ project.stack.name }}
-          </h6>
+            <ng-container *ngIf="isArray(project.stack); else singleStack">
+                <ng-container *ngFor="let stackItem of project.stack">
+                    <span class="tech-stack-item">
+                        <i [ngClass]="stackItem.iconClasses"></i>
+                        {{ stackItem.name }}
+                    </span>
+                </ng-container>
+            </ng-container>
+            <ng-template #singleStack>
+                <span class="tech-stack-item">
+                    <i [ngClass]="project.stack.iconClasses"></i>
+                    {{ project.stack.name }}
+                </span>
+            </ng-template>
+        </h6>        
           <p class="card-text text-left">
             {{ project.description }}
           </p>
